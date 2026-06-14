@@ -121,47 +121,9 @@
         <!-- HERO SECTION -->
         <section id="hero" class="hero">
             <div class="hero-visual">
-                <!-- Large decorative SVG ring illustration -->
-                <svg class="hero-jewel" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#D4B98A"/>
-                            <stop offset="30%" style="stop-color:#C9A96E"/>
-                            <stop offset="60%" style="stop-color:#E8D5B0"/>
-                            <stop offset="100%" style="stop-color:#A8874F"/>
-                        </linearGradient>
-                        <linearGradient id="gold-grad2" x1="100%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#E8D5B0"/>
-                            <stop offset="50%" style="stop-color:#C9A96E"/>
-                            <stop offset="100%" style="stop-color:#8B7340"/>
-                        </linearGradient>
-                        <filter id="gold-glow">
-                            <feGaussianBlur stdDeviation="3" result="blur"/>
-                            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-                        </filter>
-                        <radialGradient id="gem-grad" cx="40%" cy="35%">
-                            <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9"/>
-                            <stop offset="40%" style="stop-color:#E8D5B0;stop-opacity:0.6"/>
-                            <stop offset="100%" style="stop-color:#C9A96E;stop-opacity:0"/>
-                        </radialGradient>
-                    </defs>
-                    <!-- Outer ring -->
-                    <ellipse cx="200" cy="200" rx="140" ry="150" fill="none" stroke="url(#gold-grad)" stroke-width="18" opacity="0.9" filter="url(#gold-glow)"/>
-                    <!-- Inner ring shadow -->
-                    <ellipse cx="200" cy="200" rx="122" ry="132" fill="none" stroke="url(#gold-grad2)" stroke-width="4" opacity="0.4"/>
-                    <!-- Highlight arc -->
-                    <path d="M 100 130 A 130 140 0 0 1 250 75" fill="none" stroke="#E8D5B0" stroke-width="6" opacity="0.6" stroke-linecap="round"/>
-                    <!-- Gem on top -->
-                    <circle cx="200" cy="52" r="14" fill="url(#gold-grad)" stroke="#E8D5B0" stroke-width="2"/>
-                    <circle cx="200" cy="52" r="8" fill="url(#gem-grad)"/>
-                    <!-- Light sparkles -->
-                    <circle cx="130" cy="100" r="2" fill="#E8D5B0" opacity="0.8"/>
-                    <circle cx="280" cy="130" r="1.5" fill="#E8D5B0" opacity="0.6"/>
-                    <circle cx="160" cy="300" r="1.5" fill="#D4B98A" opacity="0.5"/>
-                    <circle cx="260" cy="280" r="2" fill="#E8D5B0" opacity="0.4"/>
-                </svg>
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=80&auto=format" alt="Luxury gold ring" class="hero-bg-image">
             </div>
-            <div class="hero-3d-container" id="hero-3d"></div>
+            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <div class="hero-badge reveal-up">Est. 2024</div>
                 <h1 class="hero-title reveal-up">
@@ -191,13 +153,8 @@
                 </div>
                 <div class="collections-grid">
                     <div class="collection-card reveal-up" data-category="rings">
-                        <div class="collection-card-visual" data-shape="ring">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="ring-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="50%" style="stop-color:#C9A96E"/><stop offset="100%" style="stop-color:#A8874F"/></linearGradient></defs>
-                                <ellipse cx="100" cy="100" rx="55" ry="60" fill="none" stroke="url(#ring-g)" stroke-width="12"/>
-                                <ellipse cx="100" cy="100" rx="43" ry="48" fill="none" stroke="#C9A96E" stroke-width="2" opacity="0.3"/>
-                                <circle cx="100" cy="42" r="8" fill="#C9A96E"/><circle cx="100" cy="42" r="4" fill="#fff" opacity="0.7"/>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80&auto=format&fit=crop" alt="Rings Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Rings</h3>
@@ -206,13 +163,8 @@
                         </div>
                     </div>
                     <div class="collection-card reveal-up" data-category="bracelets">
-                        <div class="collection-card-visual" data-shape="bracelet">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="brac-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#C0C0C8"/><stop offset="50%" style="stop-color:#9B9BA3"/><stop offset="100%" style="stop-color:#E0E0E8"/></linearGradient></defs>
-                                <ellipse cx="100" cy="100" rx="65" ry="50" fill="none" stroke="url(#brac-g)" stroke-width="8"/>
-                                <ellipse cx="100" cy="100" rx="65" ry="50" fill="none" stroke="#C9A96E" stroke-width="2" stroke-dasharray="8 12" opacity="0.6"/>
-                                <circle cx="35" cy="100" r="5" fill="#C9A96E"/><circle cx="165" cy="100" r="5" fill="#C9A96E"/>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80&auto=format&fit=crop" alt="Bracelets Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Bracelets</h3>
@@ -221,15 +173,8 @@
                         </div>
                     </div>
                     <div class="collection-card reveal-up" data-category="pendants">
-                        <div class="collection-card-visual" data-shape="pendant">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="pend-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="100%" style="stop-color:#A8874F"/></linearGradient></defs>
-                                <path d="M70 40 Q100 30 130 40" fill="none" stroke="#C9A96E" stroke-width="2" opacity="0.6"/>
-                                <line x1="100" y1="35" x2="100" y2="75" stroke="#C9A96E" stroke-width="2"/>
-                                <path d="M100 75 L120 100 L110 135 L90 135 L80 100 Z" fill="url(#pend-g)" stroke="#A8874F" stroke-width="1.5"/>
-                                <path d="M100 75 L110 95 L100 115 L90 95 Z" fill="#E8D5B0" opacity="0.5"/>
-                                <circle cx="100" cy="100" r="4" fill="#fff" opacity="0.6"/>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80&auto=format&fit=crop" alt="Pendants Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Pendants</h3>
@@ -238,23 +183,8 @@
                         </div>
                     </div>
                     <div class="collection-card reveal-up" data-category="earrings">
-                        <div class="collection-card-visual" data-shape="earring">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><radialGradient id="ear-g" cx="50%" cy="30%"><stop offset="0%" style="stop-color:#fff;stop-opacity:0.8"/><stop offset="100%" style="stop-color:#C9A96E;stop-opacity:0.3"/></radialGradient></defs>
-                                <!-- Left earring -->
-                                <line x1="70" y1="50" x2="70" y2="70" stroke="#C9A96E" stroke-width="2"/>
-                                <circle cx="70" cy="85" r="15" fill="url(#ear-g)" stroke="#C9A96E" stroke-width="2.5"/>
-                                <circle cx="70" cy="85" r="6" fill="#C9A96E" opacity="0.4"/>
-                                <!-- Right earring -->
-                                <line x1="130" y1="50" x2="130" y2="70" stroke="#C9A96E" stroke-width="2"/>
-                                <circle cx="130" cy="85" r="15" fill="url(#ear-g)" stroke="#C9A96E" stroke-width="2.5"/>
-                                <circle cx="130" cy="85" r="6" fill="#C9A96E" opacity="0.4"/>
-                                <!-- Drop elements -->
-                                <line x1="70" y1="100" x2="70" y2="130" stroke="#C9A96E" stroke-width="1.5"/>
-                                <circle cx="70" cy="138" r="8" fill="#C9A96E" opacity="0.8"/>
-                                <line x1="130" y1="100" x2="130" y2="130" stroke="#C9A96E" stroke-width="1.5"/>
-                                <circle cx="130" cy="138" r="8" fill="#C9A96E" opacity="0.8"/>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80&auto=format&fit=crop" alt="Earrings Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Earrings</h3>
@@ -263,17 +193,8 @@
                         </div>
                     </div>
                     <div class="collection-card reveal-up" data-category="chains">
-                        <div class="collection-card-visual" data-shape="chain">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="chain-g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#A8874F"/><stop offset="50%" style="stop-color:#E8D5B0"/><stop offset="100%" style="stop-color:#A8874F"/></linearGradient></defs>
-                                <!-- Chain links -->
-                                <ellipse cx="60" cy="90" rx="18" ry="12" fill="none" stroke="url(#chain-g)" stroke-width="5"/>
-                                <ellipse cx="90" cy="90" rx="18" ry="12" fill="none" stroke="url(#chain-g)" stroke-width="5"/>
-                                <ellipse cx="120" cy="90" rx="18" ry="12" fill="none" stroke="url(#chain-g)" stroke-width="5"/>
-                                <ellipse cx="75" cy="110" rx="18" ry="12" fill="none" stroke="url(#chain-g)" stroke-width="5"/>
-                                <ellipse cx="105" cy="110" rx="18" ry="12" fill="none" stroke="url(#chain-g)" stroke-width="5"/>
-                                <ellipse cx="135" cy="110" rx="18" ry="12" fill="none" stroke="url(#chain-g)" stroke-width="5"/>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&q=80&auto=format&fit=crop" alt="Chains Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Chains</h3>
@@ -282,15 +203,8 @@
                         </div>
                     </div>
                     <div class="collection-card reveal-up" data-category="couple">
-                        <div class="collection-card-visual" data-shape="couple">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="coup-g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="100%" style="stop-color:#C9A96E"/></linearGradient><linearGradient id="coup-g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#C0C0C8"/><stop offset="100%" style="stop-color:#808088"/></linearGradient></defs>
-                                <!-- Interlocking rings -->
-                                <ellipse cx="80" cy="100" rx="38" ry="42" fill="none" stroke="url(#coup-g1)" stroke-width="8"/>
-                                <ellipse cx="120" cy="100" rx="38" ry="42" fill="none" stroke="url(#coup-g2)" stroke-width="8"/>
-                                <!-- Small heart where they meet -->
-                                <path d="M97 90 C97 85 102 83 105 87 C108 83 113 85 113 90 C113 95 105 100 105 100 C105 100 97 95 97 90" fill="#C9A96E" opacity="0.6"/>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80&auto=format&fit=crop" alt="Couple Jewellery Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Couple Jewellery</h3>
@@ -299,15 +213,8 @@
                         </div>
                     </div>
                     <div class="collection-card reveal-up" data-category="mens">
-                        <div class="collection-card-visual" data-shape="mens">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs><linearGradient id="mens-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#606068"/><stop offset="50%" style="stop-color:#404048"/><stop offset="100%" style="stop-color:#808088"/></linearGradient></defs>
-                                <!-- Bold signet ring -->
-                                <ellipse cx="100" cy="105" rx="45" ry="50" fill="none" stroke="url(#mens-g)" stroke-width="16"/>
-                                <!-- Signet face -->
-                                <rect x="82" y="50" width="36" height="28" rx="4" fill="#404048" stroke="#606068" stroke-width="2"/>
-                                <text x="100" y="70" text-anchor="middle" font-family="serif" font-size="14" fill="#C9A96E" font-weight="300">S</text>
-                            </svg>
+                        <div class="collection-card-visual">
+                            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&q=80&auto=format&fit=crop" alt="Men's Jewellery Collection" loading="lazy">
                         </div>
                         <div class="collection-card-content">
                             <h3>Men's Jewellery</h3>
@@ -331,12 +238,7 @@
                     <div class="product-card reveal-up" data-product="eternal-band">
                         <div class="product-card-visual">
                             <div class="product-image">
-                                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><linearGradient id="eb-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="50%" style="stop-color:#C9A96E"/><stop offset="100%" style="stop-color:#8B7340"/></linearGradient></defs>
-                                    <ellipse cx="150" cy="155" rx="70" ry="78" fill="none" stroke="url(#eb-g)" stroke-width="10"/>
-                                    <ellipse cx="150" cy="155" rx="60" ry="68" fill="none" stroke="#C9A96E" stroke-width="2" opacity="0.3"/>
-                                    <path d="M110 95 A70 78 0 0 1 190 95" fill="none" stroke="#E8D5B0" stroke-width="4" opacity="0.5" stroke-linecap="round"/>
-                                </svg>
+                                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&q=80&auto=format&fit=crop" alt="The Eternal Band" loading="lazy">
                             </div>
                             <button class="quick-add-btn" data-name="The Eternal Band" data-price="4500">+ Quick Add</button>
                         </div>
@@ -349,16 +251,7 @@
                     <div class="product-card reveal-up" data-product="milestone-pendant">
                         <div class="product-card-visual">
                             <div class="product-image">
-                                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><linearGradient id="mp-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="100%" style="stop-color:#A8874F"/></linearGradient></defs>
-                                    <path d="M120 60 Q150 50 180 60" fill="none" stroke="#C9A96E" stroke-width="2.5" stroke-linecap="round"/>
-                                    <line x1="150" y1="55" x2="150" y2="110" stroke="#C9A96E" stroke-width="2.5"/>
-                                    <path d="M150 110 L175 145 L165 195 L135 195 L125 145 Z" fill="url(#mp-g)" stroke="#A8874F" stroke-width="2"/>
-                                    <path d="M150 110 L162 140 L150 170 L138 140 Z" fill="#E8D5B0" opacity="0.5"/>
-                                    <circle cx="150" cy="150" r="5" fill="#fff" opacity="0.7"/>
-                                    <circle cx="140" cy="130" r="2" fill="#fff" opacity="0.4"/>
-                                    <circle cx="160" cy="165" r="2" fill="#fff" opacity="0.3"/>
-                                </svg>
+                                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=80&auto=format&fit=crop" alt="Milestone Pendant" loading="lazy">
                             </div>
                             <button class="quick-add-btn" data-name="Milestone Pendant" data-price="6200">+ Quick Add</button>
                         </div>
@@ -371,14 +264,7 @@
                     <div class="product-card reveal-up" data-product="connection-bracelet">
                         <div class="product-card-visual">
                             <div class="product-image">
-                                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><linearGradient id="cb-g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#C0C0C8"/><stop offset="50%" style="stop-color:#E0E0E8"/><stop offset="100%" style="stop-color:#9B9BA3"/></linearGradient></defs>
-                                    <ellipse cx="150" cy="150" rx="85" ry="60" fill="none" stroke="url(#cb-g)" stroke-width="9"/>
-                                    <ellipse cx="150" cy="150" rx="85" ry="60" fill="none" stroke="#C9A96E" stroke-width="2" stroke-dasharray="10 15" opacity="0.5"/>
-                                    <circle cx="65" cy="150" r="7" fill="#C9A96E"/>
-                                    <circle cx="235" cy="150" r="7" fill="#C9A96E"/>
-                                    <rect x="63" y="145" width="8" height="10" rx="2" fill="#A8874F" opacity="0.8"/>
-                                </svg>
+                                <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500&q=80&auto=format&fit=crop" alt="Connection Bracelet" loading="lazy">
                             </div>
                             <button class="quick-add-btn" data-name="Connection Bracelet" data-price="5800">+ Quick Add</button>
                         </div>
@@ -391,13 +277,7 @@
                     <div class="product-card reveal-up" data-product="identity-signet">
                         <div class="product-card-visual">
                             <div class="product-image">
-                                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><linearGradient id="is-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#606068"/><stop offset="50%" style="stop-color:#404048"/><stop offset="100%" style="stop-color:#808088"/></linearGradient></defs>
-                                    <ellipse cx="150" cy="160" rx="55" ry="62" fill="none" stroke="url(#is-g)" stroke-width="18"/>
-                                    <rect x="125" y="90" width="50" height="38" rx="5" fill="#404048" stroke="#606068" stroke-width="2"/>
-                                    <text x="150" y="117" text-anchor="middle" font-family="serif" font-size="20" fill="#C9A96E" font-weight="300">S</text>
-                                    <path d="M130 100 A55 62 0 0 1 170 95" fill="none" stroke="#808088" stroke-width="2" opacity="0.5"/>
-                                </svg>
+                                <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=500&q=80&auto=format&fit=crop" alt="Identity Signet" loading="lazy">
                             </div>
                             <button class="quick-add-btn" data-name="Identity Signet" data-price="7200">+ Quick Add</button>
                         </div>
@@ -410,17 +290,7 @@
                     <div class="product-card reveal-up" data-product="whisper-studs">
                         <div class="product-card-visual">
                             <div class="product-image">
-                                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><radialGradient id="ws-g" cx="40%" cy="35%"><stop offset="0%" style="stop-color:#fff;stop-opacity:0.9"/><stop offset="60%" style="stop-color:#E8D5B0;stop-opacity:0.5"/><stop offset="100%" style="stop-color:#C9A96E;stop-opacity:0.2"/></radialGradient></defs>
-                                    <!-- Left stud -->
-                                    <circle cx="110" cy="140" r="28" fill="url(#ws-g)" stroke="#C9A96E" stroke-width="3"/>
-                                    <circle cx="110" cy="140" r="12" fill="#C9A96E" opacity="0.5"/>
-                                    <circle cx="105" cy="135" r="4" fill="#fff" opacity="0.6"/>
-                                    <!-- Right stud -->
-                                    <circle cx="190" cy="140" r="28" fill="url(#ws-g)" stroke="#C9A96E" stroke-width="3"/>
-                                    <circle cx="190" cy="140" r="12" fill="#C9A96E" opacity="0.5"/>
-                                    <circle cx="185" cy="135" r="4" fill="#fff" opacity="0.6"/>
-                                </svg>
+                                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&q=80&auto=format&fit=crop" alt="Whisper Studs" loading="lazy">
                             </div>
                             <button class="quick-add-btn" data-name="Whisper Studs" data-price="3800">+ Quick Add</button>
                         </div>
@@ -433,19 +303,7 @@
                     <div class="product-card reveal-up" data-product="legacy-chain">
                         <div class="product-card-visual">
                             <div class="product-image">
-                                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><linearGradient id="lc-g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#A8874F"/><stop offset="50%" style="stop-color:#E8D5B0"/><stop offset="100%" style="stop-color:#A8874F"/></linearGradient></defs>
-                                    <!-- Cuban chain pattern -->
-                                    <ellipse cx="90" cy="130" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="130" cy="130" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="170" cy="130" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="210" cy="130" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="110" cy="155" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="150" cy="155" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="190" cy="155" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="130" cy="180" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                    <ellipse cx="170" cy="180" rx="25" ry="15" fill="none" stroke="url(#lc-g)" stroke-width="7"/>
-                                </svg>
+                                <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=500&q=80&auto=format&fit=crop" alt="Legacy Chain" loading="lazy">
                             </div>
                             <button class="quick-add-btn" data-name="Legacy Chain" data-price="8500">+ Quick Add</button>
                         </div>

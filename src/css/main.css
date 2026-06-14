@@ -397,26 +397,33 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-warm) 50%, var(--color-bg-cream) 100%);
+    background: var(--color-bg);
 }
 
 .hero-visual {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 1;
-    pointer-events: none;
 }
 
-.hero-jewel {
-    width: 55vmin;
-    height: 55vmin;
-    max-width: 500px;
-    max-height: 500px;
-    opacity: 0.25;
-    animation: float 8s ease-in-out infinite, rotateSlow 30s linear infinite;
+.hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        180deg,
+        rgba(253, 251, 247, 0.3) 0%,
+        rgba(253, 251, 247, 0.6) 40%,
+        rgba(253, 251, 247, 0.85) 70%,
+        rgba(253, 251, 247, 1) 100%
+    );
 }
 
 .hero-3d-container {
@@ -427,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
     padding: var(--space-xl);
 }
@@ -555,12 +562,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .collection-card-visual {
-    height: 240px;
+    height: 280px;
     background: linear-gradient(135deg, var(--color-bg-warm), var(--color-bg-champagne));
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-xl);
+    overflow: hidden;
+}
+
+.collection-card-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.collection-card:hover .collection-card-visual img {
+    transform: scale(1.06);
 }
 
 .collection-card-visual svg {
@@ -576,7 +594,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .collection-card-3d {
-    height: 240px;
+    height: 280px;
     background: linear-gradient(135deg, var(--color-bg-warm), var(--color-bg-champagne));
     display: flex;
     align-items: center;
@@ -657,12 +675,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-image {
-    height: 300px;
+    height: 320px;
     background: linear-gradient(180deg, var(--color-bg-warm) 0%, var(--color-bg-cream) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-2xl);
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
 }
 
 .product-image svg {
