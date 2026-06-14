@@ -131,23 +131,11 @@
 
     // ─── Security Headers (CSP via meta) ───
     function initSecurity() {
-        // Content Security Policy
-        const csp = document.createElement('meta');
-        csp.httpEquiv = 'Content-Security-Policy';
-        csp.content = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'";
-        document.head.appendChild(csp);
-
         // Prevent clickjacking
         const xFrame = document.createElement('meta');
         xFrame.httpEquiv = 'X-Frame-Options';
         xFrame.content = 'DENY';
         document.head.appendChild(xFrame);
-
-        // XSS Protection
-        const xss = document.createElement('meta');
-        xss.httpEquiv = 'X-XSS-Protection';
-        xss.content = '1; mode=block';
-        document.head.appendChild(xss);
 
         // Disable right-click on images (basic protection)
         document.addEventListener('contextmenu', (e) => {
@@ -172,18 +160,6 @@
             '%cThis is a protected property of The House of Sovéra. Unauthorized access or copying is prohibited.',
             'color: #6B6560; font-size: 14px;'
         );
-
-        // Disable source inspection shortcuts (basic deterrent)
-        document.addEventListener('keydown', (e) => {
-            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) {
-                // Allow in development
-                // e.preventDefault();
-            }
-            if (e.ctrlKey && e.key === 'u') {
-                // Allow in development
-                // e.preventDefault();
-            }
-        });
     }
 
     // ─── Copyright Protection ───
