@@ -10,7 +10,7 @@ const ProductModal = (() => {
         'eternal-band': {
             name: 'The Eternal Band',
             story: 'For promises that outlast time',
-            price: 4500,
+            price: 1499,
             fullStory: 'The Eternal Band was designed for those moments when words aren\'t enough. Whether it\'s a promise to yourself or someone you love, this band carries the weight of commitment with the lightness of everyday wear. Crafted from 925 sterling silver with an 18K gold vermeil finish.',
             materials: '925 Sterling Silver with 18K Gold Vermeil • Hypoallergenic • Tarnish-resistant coating • 2.5mm band width • Available in sizes 5-13',
             sizeGuide: 'Wrap a strip of paper around your finger. Mark where it overlaps. Measure the length in mm and compare: 49mm = Size 5 • 52mm = Size 6 • 54mm = Size 7 • 57mm = Size 8 • 59mm = Size 9 • 62mm = Size 10',
@@ -21,7 +21,7 @@ const ProductModal = (() => {
         'milestone-pendant': {
             name: 'Milestone Pendant',
             story: 'Wear your achievements close',
-            price: 6200,
+            price: 1899,
             fullStory: 'The Milestone Pendant is for the moments that change your trajectory. That degree, that job, that first apartment — each milestone deserves a marker. This pendant sits close to your heart, a daily reminder of how far you\'ve come.',
             materials: '925 Sterling Silver • Cubic Zirconia accent stone • 18-inch chain with 2-inch extender • Lobster clasp • Pendant size: 12mm diameter',
             sizeGuide: 'One size fits most. The 18-inch chain with 2-inch extender allows you to adjust between choker and standard length. For a longer look, contact us for custom chain lengths.',
@@ -32,7 +32,7 @@ const ProductModal = (() => {
         'connection-bracelet': {
             name: 'Connection Bracelet',
             story: 'Linked by love, worn every day',
-            price: 5800,
+            price: 1699,
             fullStory: 'The Connection Bracelet represents bonds that transcend distance. Every link in this bracelet symbolizes a moment shared, a memory made, a connection that endures. Designed to be worn daily, it\'s a tactile reminder that you\'re never truly alone.',
             materials: '925 Sterling Silver • Interlocking link design • Adjustable from 6.5" to 8" • Safety clasp • Weight: 12g • Rhodium-plated for extra durability',
             sizeGuide: 'Measure your wrist with a flexible tape. Add 1-1.5cm for comfortable fit. Small: 6.5" • Medium: 7" • Large: 7.5" • Extra Large: 8". Not sure? Our adjustable clasp accommodates most wrist sizes.',
@@ -43,7 +43,7 @@ const ProductModal = (() => {
         'identity-signet': {
             name: 'Identity Signet',
             story: 'Your mark, your legacy',
-            price: 7200,
+            price: 1999,
             fullStory: 'The Identity Signet is rooted in an ancient tradition of sealing one\'s name onto the world. Reimagined for the modern individual, this ring is for those who know who they are and aren\'t afraid to leave their mark. Heavy enough to feel substantial, refined enough for everyday.',
             materials: '925 Sterling Silver with matte brushed finish • Flat-top signet face: 10mm • Band width: 5mm tapering • Weight: 8g • Available with optional custom engraving',
             sizeGuide: 'Signet rings should fit snugly. We recommend ordering your exact size or 0.5 size smaller than your usual ring size. Available in sizes 6-13 including half sizes.',
@@ -54,7 +54,7 @@ const ProductModal = (() => {
         'whisper-studs': {
             name: 'Whisper Studs',
             story: 'Quiet confidence, daily elegance',
-            price: 3800,
+            price: 999,
             fullStory: 'The Whisper Studs are for those who speak softly and carry great style. Minimal, elegant, and perfectly proportioned — these studs add a touch of intentional beauty to your everyday without demanding attention. They whisper confidence.',
             materials: '925 Sterling Silver • 5mm diameter • Butterfly back closure • Cubic Zirconia center stone • Sold as pair • Hypoallergenic for sensitive ears',
             sizeGuide: 'One size. The 5mm diameter is designed to complement any ear shape and style. Suitable for standard ear piercings.',
@@ -65,7 +65,7 @@ const ProductModal = (() => {
         'legacy-chain': {
             name: 'Legacy Chain',
             story: 'Strength you can wear',
-            price: 8500,
+            price: 2499,
             fullStory: 'The Legacy Chain is built to last generations. Inspired by the unbreakable bonds of family and heritage, each link is crafted to represent permanence. This is not a trend piece — it\'s designed to become an heirloom, growing more meaningful with every year you wear it.',
             materials: '925 Sterling Silver with 18K Gold Vermeil • Cuban link style • 20-inch length • 4mm width • Box clasp with safety latch • Weight: 28g',
             sizeGuide: '20-inch standard length sits below the collarbone. For a different length, contact us for 18" or 22" options. The 4mm width works beautifully as a standalone piece or layered.',
