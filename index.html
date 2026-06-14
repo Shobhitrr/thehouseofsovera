@@ -11,9 +11,8 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <title>The House of Sovéra | Jewellery For Life's Meaningful Moments</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/fonts/fonts.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8E%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/components.css">
@@ -120,10 +119,6 @@
     <main>
         <!-- HERO SECTION -->
         <section id="hero" class="hero">
-            <div class="hero-visual">
-                <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=800&q=75&auto=format" alt="Minimal gold jewellery" class="hero-bg-image" srcset="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=70&auto=format 600w, https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1000&q=75&auto=format 1000w, https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1400&q=80&auto=format 1400w" sizes="100vw" fetchpriority="high">
-            </div>
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <div class="hero-badge reveal-up">Est. 2024</div>
                 <h1 class="hero-title reveal-up">
@@ -135,6 +130,13 @@
                 <div class="hero-ctas reveal-up">
                     <a href="#collections" class="btn btn-primary">Shop Collections</a>
                     <a href="#story" class="btn btn-secondary">Discover Our Story</a>
+                </div>
+                <div class="hero-trust reveal-up">
+                    <span class="hero-trust-item">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9 Rated</span>
+                    <span class="hero-trust-divider"></span>
+                    <span class="hero-trust-item">5,000+ Moments Celebrated</span>
+                    <span class="hero-trust-divider"></span>
+                    <span class="hero-trust-item">Free Shipping Above ₹2,000</span>
                 </div>
             </div>
             <div class="hero-scroll-indicator">
@@ -383,17 +385,7 @@
                 <div class="reels-container" id="reels-container">
                     <div class="reel active" data-reel="1">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="100" cy="80" r="3" fill="#C9A96E"/>
-                                    <path d="M60 100 Q80 70 100 90 T140 85" fill="none" stroke="#C9A96E" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M50 120 Q90 100 110 120 T160 110" fill="none" stroke="#D4B98A" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-                                    <path d="M70 140 Q100 125 130 140" fill="none" stroke="#C9A96E" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
-                                    <!-- Pencil icon -->
-                                    <rect x="145" y="50" width="4" height="35" rx="1" fill="#C9A96E" transform="rotate(30 147 67)"/>
-                                    <polygon points="142,87 147,95 152,87" fill="#A8874F" transform="rotate(30 147 91)"/>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80&auto=format&fit=crop" alt="Design sketching process" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">01</span>
@@ -404,23 +396,7 @@
                     </div>
                     <div class="reel" data-reel="2">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Grid lines -->
-                                    <line x1="40" y1="50" x2="40" y2="160" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <line x1="80" y1="50" x2="80" y2="160" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <line x1="120" y1="50" x2="120" y2="160" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <line x1="160" y1="50" x2="160" y2="160" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <line x1="40" y1="70" x2="160" y2="70" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <line x1="40" y1="105" x2="160" y2="105" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <line x1="40" y1="140" x2="160" y2="140" stroke="#C9A96E" stroke-width="0.5" opacity="0.3"/>
-                                    <!-- Ring wireframe -->
-                                    <ellipse cx="100" cy="105" rx="40" ry="45" fill="none" stroke="#C9A96E" stroke-width="2"/>
-                                    <ellipse cx="100" cy="105" rx="32" ry="37" fill="none" stroke="#C9A96E" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
-                                    <!-- Dimension markers -->
-                                    <line x1="55" y1="60" x2="55" y2="150" stroke="#D4B98A" stroke-width="1"/><polygon points="55,60 52,65 58,65" fill="#D4B98A"/><polygon points="55,150 52,145 58,145" fill="#D4B98A"/>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=600&q=80&auto=format&fit=crop" alt="CAD precision engineering" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">02</span>
@@ -431,23 +407,7 @@
                     </div>
                     <div class="reel" data-reel="3">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Anvil/crafting -->
-                                    <rect x="70" y="130" width="60" height="12" rx="2" fill="#8B7B6B"/>
-                                    <rect x="85" y="142" width="30" height="20" rx="1" fill="#6B6560"/>
-                                    <!-- Hammer -->
-                                    <rect x="95" y="60" width="6" height="50" rx="2" fill="#A8874F"/>
-                                    <rect x="82" y="50" width="32" height="14" rx="3" fill="#C9A96E"/>
-                                    <!-- Sparks -->
-                                    <circle cx="80" cy="120" r="2" fill="#E8D5B0" opacity="0.8"/>
-                                    <circle cx="125" cy="115" r="1.5" fill="#E8D5B0" opacity="0.6"/>
-                                    <circle cx="90" cy="110" r="1" fill="#E8D5B0" opacity="0.7"/>
-                                    <circle cx="115" cy="125" r="1.5" fill="#C9A96E" opacity="0.5"/>
-                                    <!-- Ring being crafted -->
-                                    <ellipse cx="100" cy="128" rx="18" ry="6" fill="none" stroke="#C9A96E" stroke-width="4"/>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&auto=format&fit=crop" alt="Master craftsman at work" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">03</span>
@@ -458,20 +418,7 @@
                     </div>
                     <div class="reel" data-reel="4">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Magnifying glass -->
-                                    <circle cx="95" cy="100" r="35" fill="none" stroke="#C9A96E" stroke-width="3"/>
-                                    <line x1="120" y1="125" x2="150" y2="155" stroke="#C9A96E" stroke-width="5" stroke-linecap="round"/>
-                                    <!-- Ring inside magnifier -->
-                                    <ellipse cx="95" cy="100" rx="18" ry="20" fill="none" stroke="#D4B98A" stroke-width="3"/>
-                                    <circle cx="95" cy="82" r="4" fill="#E8D5B0"/>
-                                    <!-- Check marks -->
-                                    <path d="M55 65 L60 70 L70 58" fill="none" stroke="#5A8A6A" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M140 70 L145 75 L155 63" fill="none" stroke="#5A8A6A" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M60 145 L65 150 L75 138" fill="none" stroke="#5A8A6A" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&q=80&auto=format&fit=crop" alt="Quality inspection with loupe" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">04</span>
@@ -482,19 +429,7 @@
                     </div>
                     <div class="reel" data-reel="5">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Gift box -->
-                                    <rect x="55" y="95" width="90" height="65" rx="3" fill="#F7F3ED" stroke="#C9A96E" stroke-width="2"/>
-                                    <rect x="55" y="80" width="90" height="20" rx="3" fill="#F0EBE3" stroke="#C9A96E" stroke-width="2"/>
-                                    <!-- Ribbon -->
-                                    <rect x="96" y="80" width="8" height="80" fill="#C9A96E" opacity="0.6"/>
-                                    <path d="M80 80 Q100 60 120 80" fill="none" stroke="#C9A96E" stroke-width="3" stroke-linecap="round"/>
-                                    <path d="M85 80 Q100 65 115 80" fill="none" stroke="#D4B98A" stroke-width="2" stroke-linecap="round"/>
-                                    <!-- SOVÉRA text -->
-                                    <text x="100" y="135" text-anchor="middle" font-family="serif" font-size="10" fill="#C9A96E" letter-spacing="2">SOVÉRA</text>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238f7e7?w=600&q=80&auto=format&fit=crop" alt="Premium gift packaging" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">05</span>
@@ -505,20 +440,7 @@
                     </div>
                     <div class="reel" data-reel="6">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <defs><linearGradient id="fin-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="50%" style="stop-color:#C9A96E"/><stop offset="100%" style="stop-color:#A8874F"/></linearGradient></defs>
-                                    <!-- Finished ring with glow -->
-                                    <circle cx="100" cy="100" r="50" fill="none" stroke="#C9A96E" stroke-width="0.5" opacity="0.2"/>
-                                    <circle cx="100" cy="100" r="60" fill="none" stroke="#C9A96E" stroke-width="0.3" opacity="0.1"/>
-                                    <ellipse cx="100" cy="100" rx="35" ry="40" fill="none" stroke="url(#fin-g)" stroke-width="10"/>
-                                    <circle cx="100" cy="62" r="7" fill="#C9A96E"/><circle cx="100" cy="62" r="3.5" fill="#fff" opacity="0.7"/>
-                                    <!-- Sparkles -->
-                                    <path d="M60 70 L62 72 L60 74 L58 72 Z" fill="#E8D5B0" opacity="0.7"/>
-                                    <path d="M145 85 L147 87 L145 89 L143 87 Z" fill="#E8D5B0" opacity="0.6"/>
-                                    <path d="M75 140 L77 142 L75 144 L73 142 Z" fill="#D4B98A" opacity="0.5"/>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1515562141589-67f0d4d11890?w=600&q=80&auto=format&fit=crop" alt="Finished jewellery piece" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">06</span>
@@ -529,19 +451,7 @@
                     </div>
                     <div class="reel" data-reel="7">
                         <div class="reel-visual">
-                            <div class="reel-illustration">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Hand with ring -->
-                                    <path d="M80 160 Q85 130 90 120 Q95 110 100 105 Q110 95 115 100 Q120 105 118 115 Q116 125 115 135" fill="none" stroke="#8B7B6B" stroke-width="2.5" stroke-linecap="round"/>
-                                    <path d="M90 120 Q92 115 95 112 Q98 109 102 108" fill="none" stroke="#8B7B6B" stroke-width="2" stroke-linecap="round"/>
-                                    <!-- Ring on finger -->
-                                    <ellipse cx="100" cy="108" rx="8" ry="4" fill="none" stroke="#C9A96E" stroke-width="3"/>
-                                    <!-- Heart above -->
-                                    <path d="M92 70 C92 62 100 58 105 65 C110 58 118 62 118 70 C118 78 105 88 105 88 C105 88 92 78 92 70" fill="none" stroke="#C9A96E" stroke-width="1.5" opacity="0.6"/>
-                                    <!-- Smile curve -->
-                                    <path d="M130 80 Q140 90 150 80" fill="none" stroke="#D4B98A" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
-                                </svg>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=600&q=80&auto=format&fit=crop" alt="Woman wearing jewellery" class="reel-image">
                         </div>
                         <div class="reel-content">
                             <span class="reel-number">07</span>
