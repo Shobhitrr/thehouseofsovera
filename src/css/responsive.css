@@ -83,7 +83,11 @@
     }
 
     .collection-card-3d {
-        height: 160px;
+        height: 180px;
+    }
+
+    .collection-card-visual {
+        height: 180px;
     }
 
     .collection-card-content {
