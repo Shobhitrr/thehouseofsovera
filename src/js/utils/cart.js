@@ -10,10 +10,25 @@ const CartManager = (() => {
         try {
             const saved = localStorage.getItem('sovera_cart');
             if (saved) {
-                items = JSON.parse(saved);
+                const parsed = JSON.parse(saved);
+                // Validate loaded data structure
+                if (Array.isArray(parsed)) {
+                    items = parsed.filter(item => 
+                        item && typeof item.name === 'string' && 
+                        typeof item.price === 'number' && item.price >= 0 &&
+                        typeof item.quantity === 'number' && item.quantity > 0 &&
+                        typeof item.id === 'number'
+                    ).map(item => ({
+                        name: String(item.name).substring(0, 100),
+                        price: Math.abs(item.price),
+                        quantity: Math.min(99, Math.max(1, item.quantity)),
+                        id: item.id
+                    }));
+                }
             }
         } catch(e) {
             items = [];
+            localStorage.removeItem('sovera_cart');
         }
     }
 
@@ -22,15 +37,22 @@ const CartManager = (() => {
     }
 
     function addItem(name, price, quantity = 1) {
-        const existing = items.find(item => item.name === name);
+        // Sanitize input to prevent XSS
+        const safeName = String(name).replace(/[<>"'&]/g, (c) => ({
+            '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '&': '&amp;'
+        }[c]));
+        const safePrice = Math.abs(parseFloat(price)) || 0;
+        const safeQty = Math.max(1, Math.min(99, parseInt(quantity) || 1));
+
+        const existing = items.find(item => item.name === safeName);
         if (existing) {
-            existing.quantity += quantity;
+            existing.quantity = Math.min(99, existing.quantity + safeQty);
         } else {
-            items.push({ name, price: parseFloat(price), quantity, id: Date.now() });
+            items.push({ name: safeName, price: safePrice, quantity: safeQty, id: Date.now() });
         }
         save();
         notify();
-        showNotification(`${name} added to your collection`);
+        showNotification(`${safeName} added to your collection`);
     }
 
     function removeItem(id) {

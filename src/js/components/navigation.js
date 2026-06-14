@@ -131,13 +131,87 @@ const Navigation = (() => {
             submitBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 if (CartManager.getCount() === 0) {
-                    alert('Please add items to your collection first.');
+                    showValidationError('Please add items to your collection first.');
                     return;
                 }
+                
+                // Validate required fields
+                const errors = validateCheckoutForm();
+                if (errors.length > 0) {
+                    showValidationError(errors[0]);
+                    return;
+                }
+                
                 // Simulate successful order
                 showOrderConfirmation();
             });
         }
+    }
+
+    function validateCheckoutForm() {
+        const errors = [];
+        const overlay = document.getElementById('checkout-overlay');
+        if (!overlay) return errors;
+
+        const email = overlay.querySelector('input[type="email"]');
+        const phone = overlay.querySelector('input[type="tel"]');
+        const textInputs = overlay.querySelectorAll('.checkout-section:nth-child(2) .checkout-input');
+        
+        // Email validation
+        if (!email || !email.value.trim()) {
+            errors.push('Please enter your email address.');
+            email && email.focus();
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+            errors.push('Please enter a valid email address.');
+            email.focus();
+        }
+
+        // Phone validation
+        if (!phone || !phone.value.trim()) {
+            errors.push('Please enter your phone number.');
+        } else if (!/^[\d\s\-+()]{8,15}$/.test(phone.value.trim())) {
+            errors.push('Please enter a valid phone number.');
+        }
+
+        // Address fields (first name, last name, address, city, state, pin)
+        if (textInputs.length > 0) {
+            const fieldNames = ['First name', 'Last name', 'Address', 'City', 'State', 'PIN Code'];
+            textInputs.forEach((input, i) => {
+                if (input.tagName === 'INPUT' && !input.value.trim()) {
+                    errors.push(`Please enter your ${fieldNames[i] || 'shipping details'}.`);
+                }
+            });
+        }
+
+        return errors;
+    }
+
+    function showValidationError(message) {
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+            position: fixed; top: 24px; right: 24px;
+            background: #C45B5B; color: #fff;
+            padding: 16px 24px; border-radius: 8px;
+            font-size: 0.85rem; z-index: 10000;
+            opacity: 0; transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(196, 91, 91, 0.3);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 320px;
+        `;
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        requestAnimationFrame(() => {
+            notification.style.opacity = '1';
+            notification.style.transform = 'translateY(0)';
+        });
+
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            notification.style.transform = 'translateY(-10px)';
+            setTimeout(() => notification.remove(), 300);
+        }, 4000);
     }
 
     function showOrderConfirmation() {

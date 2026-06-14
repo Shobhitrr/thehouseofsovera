@@ -192,15 +192,17 @@
         
         // Wait for DOM to be fully ready
         setTimeout(() => {
-            // Initialize modules
-            CurrencyManager.init();
-            CartManager.init();
-            AnimationEngine.init();
-            Navigation.init();
-            Hero3D.init();
-            Collections3D.init();
-            ReelsExperience.init();
-            ProductModal.init();
+            // Initialize modules (core - must not fail)
+            try { CurrencyManager.init(); } catch(e) { console.warn('Currency init failed:', e); }
+            try { CartManager.init(); } catch(e) { console.warn('Cart init failed:', e); }
+            try { AnimationEngine.init(); } catch(e) { console.warn('Animation init failed:', e); }
+            try { Navigation.init(); } catch(e) { console.warn('Navigation init failed:', e); }
+            try { ProductModal.init(); } catch(e) { console.warn('ProductModal init failed:', e); }
+            
+            // 3D enhancements (non-critical - graceful degradation)
+            try { Hero3D.init(); } catch(e) { console.warn('Hero3D unavailable:', e.message); }
+            try { Collections3D.init(); } catch(e) { console.warn('Collections3D unavailable:', e.message); }
+            try { ReelsExperience.init(); } catch(e) { console.warn('Reels init failed:', e.message); }
             
             // Page-level interactions
             initNewsletter();
