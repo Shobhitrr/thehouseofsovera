@@ -397,7 +397,26 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: var(--color-bg);
+    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-warm) 50%, var(--color-bg-cream) 100%);
+}
+
+.hero-visual {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-jewel {
+    width: 55vmin;
+    height: 55vmin;
+    max-width: 500px;
+    max-height: 500px;
+    opacity: 0.25;
+    animation: float 8s ease-in-out infinite, rotateSlow 30s linear infinite;
 }
 
 .hero-3d-container {
@@ -535,6 +554,27 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--color-accent-soft);
 }
 
+.collection-card-visual {
+    height: 240px;
+    background: linear-gradient(135deg, var(--color-bg-warm), var(--color-bg-champagne));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+}
+
+.collection-card-visual svg {
+    width: 100%;
+    height: 100%;
+    max-width: 160px;
+    max-height: 160px;
+    transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.collection-card:hover .collection-card-visual svg {
+    transform: scale(1.08) rotate(2deg);
+}
+
 .collection-card-3d {
     height: 240px;
     background: linear-gradient(135deg, var(--color-bg-warm), var(--color-bg-champagne));
@@ -614,6 +654,27 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.product-image {
+    height: 300px;
+    background: linear-gradient(180deg, var(--color-bg-warm) 0%, var(--color-bg-cream) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl);
+}
+
+.product-image svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.product-card:hover .product-image svg {
+    transform: scale(1.05);
 }
 
 .quick-add-btn {
@@ -740,6 +801,29 @@ h1, h2, h3, h4, h5, h6 {
 .reel-3d {
     width: 100%;
     height: 100%;
+}
+
+.reel-illustration {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3xl);
+}
+
+.reel-illustration svg {
+    width: 100%;
+    height: 100%;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.modal-jewel-svg {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    animation: breathe 4s ease-in-out infinite;
 }
 
 .reel-content {
