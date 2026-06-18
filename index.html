@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The House of Sovéra - Jewellery Designed For Life's Meaningful Moments. Premium everyday jewellery that symbolizes achievement, identity, confidence, and growth.">
-    <meta name="keywords" content="luxury jewellery, meaningful jewellery, everyday rings, bracelets, pendants, The House of Sovéra">
-    <meta name="author" content="The House of Sovéra">
+    <meta name="description" content="The House of Sovéra - Jewellery Designed For Life's Meaningful Moments. Premium everyday jewellery.">
+    <meta name="keywords" content="luxury jewellery, meaningful jewellery, everyday rings, bracelets, pendants">
     <meta property="og:title" content="The House of Sovéra | Jewellery For Life's Meaningful Moments">
-    <meta property="og:description" content="Some moments deserve more than a photograph. Discover jewellery designed for everyday wear that celebrates your achievements, relationships, and milestones.">
+    <meta property="og:description" content="Some moments deserve more than a photograph.">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
     <title>The House of Sovéra | Jewellery For Life's Meaningful Moments</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="src/assets/fonts/fonts.css">
@@ -28,6 +26,7 @@
         </div>
     </div>
 
+
     <!-- Navigation -->
     <nav id="main-nav" class="nav">
         <div class="nav-inner">
@@ -37,21 +36,16 @@
                 </button>
             </div>
             <div class="nav-center">
-                <a href="/" class="nav-logo">
-                    <span class="logo-text">THE HOUSE OF SOVÉRA</span>
-                </a>
+                <a href="/" class="nav-logo"><span class="logo-text">THE HOUSE OF SOVÉRA</span></a>
             </div>
             <div class="nav-right">
-                <button class="nav-icon-btn" id="search-toggle" aria-label="Search">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-                </button>
                 <div class="currency-selector">
                     <select id="currency-select" aria-label="Select currency">
-                        <option value="INR">INR ₹</option>
-                        <option value="USD">USD $</option>
-                        <option value="AED">AED د.إ</option>
-                        <option value="GBP">GBP £</option>
-                        <option value="CAD">CAD $</option>
+                        <option value="INR">₹ INR</option>
+                        <option value="USD">$ USD</option>
+                        <option value="AED">د.إ AED</option>
+                        <option value="GBP">£ GBP</option>
+                        <option value="CAD">$ CAD</option>
                     </select>
                 </div>
                 <button class="nav-icon-btn cart-btn" id="cart-toggle" aria-label="Cart">
@@ -74,7 +68,6 @@
                 <a href="#new-arrivals" class="mobile-menu-link">New Arrivals</a>
                 <a href="#story" class="mobile-menu-link">Our Story</a>
                 <a href="#process" class="mobile-menu-link">The Process</a>
-                <a href="#why-sovera" class="mobile-menu-link">Why Sovéra</a>
                 <a href="#stories" class="mobile-menu-link">Customer Stories</a>
             </nav>
             <div class="mobile-menu-footer">
@@ -83,563 +76,234 @@
         </div>
     </div>
 
-    <!-- Search Overlay -->
-    <div class="search-overlay" id="search-overlay">
-        <div class="search-inner">
-            <input type="text" class="search-input" placeholder="Search collections, stories, moments..." id="search-input">
-            <button class="search-close" id="search-close">&times;</button>
-        </div>
-    </div>
-
     <!-- Cart Drawer -->
     <div class="cart-drawer" id="cart-drawer">
         <div class="cart-drawer-inner">
-            <div class="cart-header">
-                <h3>Your Selections</h3>
-                <button class="cart-close" id="cart-close">&times;</button>
-            </div>
-            <div class="cart-items" id="cart-items">
-                <div class="cart-empty">
-                    <p>Your collection awaits</p>
-                    <a href="#collections" class="btn btn-primary">Explore Collections</a>
-                </div>
-            </div>
+            <div class="cart-header"><h3>Your Selections</h3><button class="cart-close" id="cart-close">&times;</button></div>
+            <div class="cart-items" id="cart-items"><div class="cart-empty"><p>Your collection awaits</p></div></div>
             <div class="cart-footer" id="cart-footer" style="display:none;">
-                <div class="cart-total">
-                    <span>Total</span>
-                    <span id="cart-total-amount">₹0</span>
-                </div>
+                <div class="cart-total"><span>Total</span><span id="cart-total-amount">₹0</span></div>
                 <a href="#checkout" class="btn btn-primary btn-full">Proceed to Checkout</a>
-                <p class="cart-note">Free shipping on orders above ₹2,000</p>
             </div>
         </div>
     </div>
 
-    <!-- Main Content -->
+
     <main>
-        <!-- HERO SECTION -->
+        <!-- HERO -->
         <section id="hero" class="hero">
             <div class="hero-content">
-                <div class="hero-badge reveal-up">Est. 2024</div>
+                <p class="hero-overline reveal-up">Est. 2024 &mdash; India</p>
                 <h1 class="hero-title reveal-up">
-                    <span class="hero-title-line">THE HOUSE OF</span>
-                    <span class="hero-title-line hero-title-accent">SOVÉRA</span>
+                    <span class="hero-line-sm">THE HOUSE OF</span>
+                    <span class="hero-line-lg">SOVÉRA</span>
                 </h1>
-                <p class="hero-subtitle reveal-up">Jewellery Designed For Life's Meaningful Moments</p>
-                <p class="hero-tagline reveal-up">"Some moments deserve more than a photograph."</p>
-                <div class="hero-ctas reveal-up">
+                <p class="hero-desc reveal-up">Jewellery designed for life's meaningful moments.</p>
+                <p class="hero-quote reveal-up">"Some moments deserve more than a photograph."</p>
+                <div class="hero-actions reveal-up">
                     <a href="#collections" class="btn btn-primary">Shop Collections</a>
-                    <a href="#story" class="btn btn-secondary">Discover Our Story</a>
+                    <a href="#story" class="btn btn-ghost">Our Story</a>
                 </div>
-                <div class="hero-trust reveal-up">
-                    <span class="hero-trust-item">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9 Rated</span>
-                    <span class="hero-trust-divider"></span>
-                    <span class="hero-trust-item">5,000+ Moments Celebrated</span>
-                    <span class="hero-trust-divider"></span>
-                    <span class="hero-trust-item">Free Shipping Above ₹2,000</span>
+                <div class="hero-proof reveal-up">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9/5</span>
+                    <span class="dot"></span>
+                    <span>5,000+ Moments Celebrated</span>
+                    <span class="dot"></span>
+                    <span>Free Shipping Above ₹2,000</span>
                 </div>
             </div>
-            <div class="hero-scroll-indicator">
-                <span>Scroll to explore</span>
-                <div class="scroll-line"></div>
-            </div>
+            <div class="hero-accent"></div>
         </section>
 
-        <!-- SECTION 2: SHOP COLLECTIONS -->
-        <section id="collections" class="section collections">
+        <!-- COLLECTIONS -->
+        <section id="collections" class="section">
             <div class="container">
-                <div class="section-header reveal-up">
-                    <span class="section-label">Curated For You</span>
-                    <h2 class="section-title">Shop Collections</h2>
-                    <p class="section-desc">Each collection tells a story. Find the one that speaks to your moment.</p>
-                </div>
-                <div class="collections-grid">
-                    <div class="collection-card reveal-up" data-category="rings">
-                        <div class="collection-card-visual">
-                            <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=400&q=75&auto=format&fit=crop" alt="Rings Collection - Minimal gold bands" loading="lazy" srcset="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=300&q=70&auto=format&fit=crop 300w, https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=500&q=75&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=700&q=80&auto=format&fit=crop 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Rings</h3>
-                            <p>Circles of commitment, achievement, and self-love</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
-                    <div class="collection-card reveal-up" data-category="bracelets">
-                        <div class="collection-card-visual">
-                            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=75&auto=format&fit=crop" alt="Bracelets Collection - Elegant daily wear bracelet" loading="lazy" srcset="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=300&q=70&auto=format&fit=crop 300w, https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500&q=75&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=700&q=80&auto=format&fit=crop 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Bracelets</h3>
-                            <p>Everyday reminders of strength and connection</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
-                    <div class="collection-card reveal-up" data-category="pendants">
-                        <div class="collection-card-visual">
-                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=75&auto=format&fit=crop" alt="Pendants Collection - Minimalist pendant necklace" loading="lazy" srcset="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&q=70&auto=format&fit=crop 300w, https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=75&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&q=80&auto=format&fit=crop 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Pendants</h3>
-                            <p>Symbols worn close to the heart</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
-                    <div class="collection-card reveal-up" data-category="earrings">
-                        <div class="collection-card-visual">
-                            <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=400&q=75&auto=format&fit=crop" alt="Earrings Collection - Minimal stud earrings" loading="lazy" srcset="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=300&q=70&auto=format&fit=crop 300w, https://images.unsplash.com/photo-1630019852942-f89202989a59?w=500&q=75&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1630019852942-f89202989a59?w=700&q=80&auto=format&fit=crop 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Earrings</h3>
-                            <p>Subtle statements of confidence and grace</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
-                    <div class="collection-card reveal-up" data-category="chains">
-                        <div class="collection-card-visual">
-                            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&q=75&auto=format&fit=crop" alt="Chains Collection - Delicate gold chain" loading="lazy" srcset="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=300&q=70&auto=format&fit=crop 300w, https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500&q=75&auto=format&fit=crop 500w, https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=700&q=80&auto=format&fit=crop 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Chains</h3>
-                            <p>Links that bind stories together</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
-                    <div class="collection-card reveal-up" data-category="couple">
-                        <div class="collection-card-visual">
-                            <img src="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Couple Jewellery - Matching infinity bands" loading="lazy" srcset="https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=500 500w, https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=700 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Couple Jewellery</h3>
-                            <p>Infinity bands — two pieces, one connection</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
-                    <div class="collection-card reveal-up" data-category="mens">
-                        <div class="collection-card-visual">
-                            <img src="https://images.pexels.com/photos/8989470/pexels-photo-8989470.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Men's Jewellery - Chains and rings for men" loading="lazy" srcset="https://images.pexels.com/photos/8989470/pexels-photo-8989470.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/8989470/pexels-photo-8989470.jpeg?auto=compress&cs=tinysrgb&w=500 500w, https://images.pexels.com/photos/8989470/pexels-photo-8989470.jpeg?auto=compress&cs=tinysrgb&w=700 700w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
-                        </div>
-                        <div class="collection-card-content">
-                            <h3>Men's Jewellery</h3>
-                            <p>Chains & rings. Bold yet refined.</p>
-                            <span class="collection-cta">Explore <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                        </div>
-                    </div>
+                <header class="sec-header reveal-up">
+                    <span class="sec-label">Collections</span>
+                    <h2 class="sec-title">Find Your Symbol</h2>
+                </header>
+                <div class="col-grid">
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="rings">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="28" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="40" cy="13" r="4" fill="currentColor" opacity="0.7"/></svg></div>
+                        <h3>Rings</h3><p>Achievement &amp; commitment</p>
+                    </a>
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="bracelets">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><ellipse cx="40" cy="40" rx="32" ry="22" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="8" cy="40" r="3" fill="currentColor" opacity="0.7"/></svg></div>
+                        <h3>Bracelets</h3><p>Strength &amp; connection</p>
+                    </a>
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="pendants">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><path d="M40 15 L50 35 L45 60 L35 60 L30 35 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><line x1="40" y1="5" x2="40" y2="15" stroke="currentColor" stroke-width="2"/></svg></div>
+                        <h3>Pendants</h3><p>Close to the heart</p>
+                    </a>
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="earrings">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><circle cx="30" cy="40" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="50" cy="40" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/><line x1="30" y1="20" x2="30" y2="30" stroke="currentColor" stroke-width="2"/><line x1="50" y1="20" x2="50" y2="30" stroke="currentColor" stroke-width="2"/></svg></div>
+                        <h3>Earrings</h3><p>Quiet confidence</p>
+                    </a>
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="chains">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><ellipse cx="30" cy="40" rx="14" ry="9" fill="none" stroke="currentColor" stroke-width="2.5"/><ellipse cx="50" cy="40" rx="14" ry="9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></div>
+                        <h3>Chains</h3><p>Legacy links</p>
+                    </a>
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="couple">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><circle cx="30" cy="40" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="50" cy="40" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></div>
+                        <h3>Couple Bands</h3><p>Infinity, together</p>
+                    </a>
+                    <a class="col-card reveal-up" href="#new-arrivals" data-category="mens">
+                        <div class="col-card-icon"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="26" fill="none" stroke="currentColor" stroke-width="4"/></svg></div>
+                        <h3>Men's</h3><p>Chains &amp; rings</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: NEW ARRIVALS -->
-        <section id="new-arrivals" class="section new-arrivals">
+
+        <!-- NEW ARRIVALS -->
+        <section id="new-arrivals" class="section section-alt">
             <div class="container">
-                <div class="section-header reveal-up">
-                    <span class="section-label">Just Arrived</span>
-                    <h2 class="section-title">New Arrivals</h2>
-                    <p class="section-desc">Fresh designs crafted to mark your newest chapters</p>
-                </div>
-                <div class="products-grid">
-                    <div class="product-card reveal-up" data-product="eternal-band">
-                        <div class="product-card-visual">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=500&q=80&auto=format&fit=crop" alt="The Eternal Band - Minimal gold ring" loading="lazy">
-                            </div>
-                            <button class="quick-add-btn" data-name="The Eternal Band" data-price="1499">+ Quick Add</button>
-                        </div>
-                        <div class="product-card-info">
-                            <h4 class="product-name">The Eternal Band</h4>
-                            <p class="product-story">For promises that outlast time</p>
-                            <span class="product-price" data-base-price="1499">₹1,499</span>
-                        </div>
+                <header class="sec-header reveal-up">
+                    <span class="sec-label">New Arrivals</span>
+                    <h2 class="sec-title">Fresh Chapters</h2>
+                </header>
+                <div class="prod-grid">
+                    <div class="prod-card reveal-up" data-product="eternal-band">
+                        <div class="prod-visual"><div class="prod-shape ring-shape"></div></div>
+                        <h4>The Eternal Band</h4>
+                        <p class="prod-story">For promises that outlast time</p>
+                        <div class="prod-footer"><span class="product-price" data-base-price="1499">₹1,499</span><button class="quick-add-btn" data-name="The Eternal Band" data-price="1499">Add +</button></div>
                     </div>
-                    <div class="product-card reveal-up" data-product="milestone-pendant">
-                        <div class="product-card-visual">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=80&auto=format&fit=crop" alt="Milestone Pendant - Delicate pendant necklace" loading="lazy">
-                            </div>
-                            <button class="quick-add-btn" data-name="Milestone Pendant" data-price="1899">+ Quick Add</button>
-                        </div>
-                        <div class="product-card-info">
-                            <h4 class="product-name">Milestone Pendant</h4>
-                            <p class="product-story">Wear your achievements close</p>
-                            <span class="product-price" data-base-price="1899">₹1,899</span>
-                        </div>
+                    <div class="prod-card reveal-up" data-product="milestone-pendant">
+                        <div class="prod-visual"><div class="prod-shape pendant-shape"></div></div>
+                        <h4>Milestone Pendant</h4>
+                        <p class="prod-story">Wear your achievements close</p>
+                        <div class="prod-footer"><span class="product-price" data-base-price="1899">₹1,899</span><button class="quick-add-btn" data-name="Milestone Pendant" data-price="1899">Add +</button></div>
                     </div>
-                    <div class="product-card reveal-up" data-product="connection-bracelet">
-                        <div class="product-card-visual">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=500&q=80&auto=format&fit=crop" alt="Connection Bracelet - Everyday bracelet" loading="lazy">
-                            </div>
-                            <button class="quick-add-btn" data-name="Connection Bracelet" data-price="1699">+ Quick Add</button>
-                        </div>
-                        <div class="product-card-info">
-                            <h4 class="product-name">Connection Bracelet</h4>
-                            <p class="product-story">Linked by love, worn every day</p>
-                            <span class="product-price" data-base-price="1699">₹1,699</span>
-                        </div>
+                    <div class="prod-card reveal-up" data-product="connection-bracelet">
+                        <div class="prod-visual"><div class="prod-shape bracelet-shape"></div></div>
+                        <h4>Connection Bracelet</h4>
+                        <p class="prod-story">Linked by love, worn every day</p>
+                        <div class="prod-footer"><span class="product-price" data-base-price="1699">₹1,699</span><button class="quick-add-btn" data-name="Connection Bracelet" data-price="1699">Add +</button></div>
                     </div>
-                    <div class="product-card reveal-up" data-product="identity-signet">
-                        <div class="product-card-visual">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=500&q=80&auto=format&fit=crop" alt="Identity Signet - Modern signet ring" loading="lazy">
-                            </div>
-                            <button class="quick-add-btn" data-name="Identity Signet" data-price="1999">+ Quick Add</button>
-                        </div>
-                        <div class="product-card-info">
-                            <h4 class="product-name">Identity Signet</h4>
-                            <p class="product-story">Your mark, your legacy</p>
-                            <span class="product-price" data-base-price="1999">₹1,999</span>
-                        </div>
+                    <div class="prod-card reveal-up" data-product="identity-signet">
+                        <div class="prod-visual"><div class="prod-shape signet-shape"></div></div>
+                        <h4>Identity Signet</h4>
+                        <p class="prod-story">Your mark, your legacy</p>
+                        <div class="prod-footer"><span class="product-price" data-base-price="1999">₹1,999</span><button class="quick-add-btn" data-name="Identity Signet" data-price="1999">Add +</button></div>
                     </div>
-                    <div class="product-card reveal-up" data-product="whisper-studs">
-                        <div class="product-card-visual">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=500&q=80&auto=format&fit=crop" alt="Whisper Studs - Minimal stud earrings" loading="lazy">
-                            </div>
-                            <button class="quick-add-btn" data-name="Whisper Studs" data-price="999">+ Quick Add</button>
-                        </div>
-                        <div class="product-card-info">
-                            <h4 class="product-name">Whisper Studs</h4>
-                            <p class="product-story">Quiet confidence, daily elegance</p>
-                            <span class="product-price" data-base-price="999">₹999</span>
-                        </div>
+                    <div class="prod-card reveal-up" data-product="whisper-studs">
+                        <div class="prod-visual"><div class="prod-shape studs-shape"></div></div>
+                        <h4>Whisper Studs</h4>
+                        <p class="prod-story">Quiet confidence, daily elegance</p>
+                        <div class="prod-footer"><span class="product-price" data-base-price="999">₹999</span><button class="quick-add-btn" data-name="Whisper Studs" data-price="999">Add +</button></div>
                     </div>
-                    <div class="product-card reveal-up" data-product="legacy-chain">
-                        <div class="product-card-visual">
-                            <div class="product-image">
-                                <img src="https://images.pexels.com/photos/8989470/pexels-photo-8989470.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Legacy Chain - Men's gold chain" loading="lazy">
-                            </div>
-                            <button class="quick-add-btn" data-name="Legacy Chain" data-price="2499">+ Quick Add</button>
-                        </div>
-                        <div class="product-card-info">
-                            <h4 class="product-name">Legacy Chain</h4>
-                            <p class="product-story">Strength you can wear</p>
-                            <span class="product-price" data-base-price="2499">₹2,499</span>
-                        </div>
+                    <div class="prod-card reveal-up" data-product="legacy-chain">
+                        <div class="prod-visual"><div class="prod-shape chain-shape"></div></div>
+                        <h4>Legacy Chain</h4>
+                        <p class="prod-story">Strength you can wear</p>
+                        <div class="prod-footer"><span class="product-price" data-base-price="2499">₹2,499</span><button class="quick-add-btn" data-name="Legacy Chain" data-price="2499">Add +</button></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: THE MOMENT BEHIND THE PIECE -->
-        <section id="story" class="section moments-section">
-            <div class="container">
-                <div class="section-header reveal-up">
-                    <span class="section-label">Beyond Jewellery</span>
-                    <h2 class="section-title">The Moment Behind The Piece</h2>
-                    <p class="section-desc">We don't sell jewellery. We craft symbols for life's most meaningful chapters.</p>
-                </div>
-                <div class="moments-grid">
-                    <div class="moment-card reveal-up">
-                        <div class="moment-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
-                        </div>
-                        <h3>Achievement</h3>
-                        <p>That promotion you earned. The degree you fought for. The goal you finally reached. Some victories deserve to be worn.</p>
-                    </div>
-                    <div class="moment-card reveal-up">
-                        <div class="moment-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-                        </div>
-                        <h3>Connection</h3>
-                        <p>The person who changed everything. The bond that transcends distance. Jewellery that holds you together when you're apart.</p>
-                    </div>
-                    <div class="moment-card reveal-up">
-                        <div class="moment-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                        </div>
-                        <h3>Commitment</h3>
-                        <p>To yourself. To your partner. To your craft. A piece that reminds you of the promises you intend to keep.</p>
-                    </div>
-                    <div class="moment-card reveal-up">
-                        <div class="moment-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
-                        </div>
-                        <h3>Growth</h3>
-                        <p>Every chapter builds upon the last. Mark your evolution with something as enduring as the journey itself.</p>
-                    </div>
-                    <div class="moment-card reveal-up">
-                        <div class="moment-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-                        </div>
-                        <h3>Legacy</h3>
-                        <p>Pieces that outlive trends. Jewellery worthy of being passed down, carrying stories across generations.</p>
-                    </div>
-                    <div class="moment-card reveal-up">
-                        <div class="moment-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-                        </div>
-                        <h3>Milestones</h3>
-                        <p>First job. First home. First love. Mark each milestone with something that doesn't fade when the moment passes.</p>
-                    </div>
+        <!-- THE MOMENT BEHIND THE PIECE -->
+        <section id="story" class="section">
+            <div class="container container-narrow">
+                <header class="sec-header reveal-up">
+                    <span class="sec-label">Our Philosophy</span>
+                    <h2 class="sec-title">We Don't Sell Jewellery.<br>We Craft Symbols.</h2>
+                </header>
+                <div class="philosophy-grid">
+                    <div class="phil-item reveal-up"><span class="phil-num">01</span><h3>Achievement</h3><p>That promotion. That degree. The goal you finally reached. Some victories deserve to be worn.</p></div>
+                    <div class="phil-item reveal-up"><span class="phil-num">02</span><h3>Connection</h3><p>The person who changed everything. Jewellery that holds you together when you're apart.</p></div>
+                    <div class="phil-item reveal-up"><span class="phil-num">03</span><h3>Commitment</h3><p>To yourself. To your partner. A piece that reminds you of promises you intend to keep.</p></div>
+                    <div class="phil-item reveal-up"><span class="phil-num">04</span><h3>Growth</h3><p>Every chapter builds upon the last. Mark your evolution with something enduring.</p></div>
+                    <div class="phil-item reveal-up"><span class="phil-num">05</span><h3>Legacy</h3><p>Pieces worthy of being passed down, carrying stories across generations.</p></div>
+                    <div class="phil-item reveal-up"><span class="phil-num">06</span><h3>Milestones</h3><p>First job. First home. First love. Mark each with something that doesn't fade.</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5: REELS-STYLE EXPERIENCE -->
-        <section id="process" class="section reels-section">
+
+        <!-- PROCESS / REELS -->
+        <section id="process" class="section section-alt">
             <div class="container">
-                <div class="section-header reveal-up">
-                    <span class="section-label">Behind The Craft</span>
-                    <h2 class="section-title">From Vision to Reality</h2>
-                    <p class="section-desc">Every piece has a journey. Experience ours.</p>
-                </div>
-                <div class="reels-container" id="reels-container">
-                    <div class="reel active" data-reel="1">
-                        <div class="reel-visual">
-                            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=80&auto=format&fit=crop" alt="Jewellery design sketching" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">01</span>
-                            <h3>Design Concept</h3>
-                            <p>Every piece begins with a story. Our designers translate emotions and moments into sketches that capture the essence of what you'll wear.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                    <div class="reel" data-reel="2">
-                        <div class="reel-visual">
-                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80&auto=format&fit=crop" alt="Precision ring engineering" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">02</span>
-                            <h3>CAD Engineering</h3>
-                            <p>Precision meets artistry. Every curve, every angle is digitally perfected to ensure comfort and beauty in harmony.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                    <div class="reel" data-reel="3">
-                        <div class="reel-visual">
-                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80&auto=format&fit=crop" alt="Jewellery crafting and polishing" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">03</span>
-                            <h3>Master Craftsmanship</h3>
-                            <p>Skilled artisans bring digital precision to life. Casting, polishing, setting — every step performed with decades of expertise.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                    <div class="reel" data-reel="4">
-                        <div class="reel-visual">
-                            <img src="https://images.unsplash.com/photo-1515562141589-67f0d4d11890?w=600&q=80&auto=format&fit=crop" alt="Quality inspection of jewellery" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">04</span>
-                            <h3>Quality Assurance</h3>
-                            <p>Every piece undergoes rigorous inspection. We check weight, finish, stone setting, and wearability before it earns our name.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                    <div class="reel" data-reel="5">
-                        <div class="reel-visual">
-                            <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&q=80&auto=format&fit=crop" alt="Luxury jewellery gift packaging" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">05</span>
-                            <h3>Luxury Packaging</h3>
-                            <p>The unboxing is part of the experience. Custom packaging designed to make the moment of receiving as special as the piece itself.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                    <div class="reel" data-reel="6">
-                        <div class="reel-visual">
-                            <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=600&q=80&auto=format&fit=crop" alt="Finished gold ring" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">06</span>
-                            <h3>The Finished Piece</h3>
-                            <p>Ready to become part of your story. A symbol of quality, meaning, and intentional design — made for everyday life.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                    <div class="reel" data-reel="7">
-                        <div class="reel-visual">
-                            <img src="https://images.pexels.com/photos/8989470/pexels-photo-8989470.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Person wearing Sovéra jewellery" class="reel-image">
-                        </div>
-                        <div class="reel-content">
-                            <span class="reel-number">07</span>
-                            <h3>Your Experience</h3>
-                            <p>From the moment it arrives to the lifetime you'll wear it — we're here for every chapter of your journey with Sovéra.</p>
-                        </div>
-                        <div class="reel-progress"><div class="reel-progress-fill"></div></div>
-                    </div>
-                </div>
-                <div class="reels-nav">
-                    <button class="reel-nav-btn" id="reel-prev" aria-label="Previous">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                    </button>
-                    <div class="reels-dots" id="reels-dots"></div>
-                    <button class="reel-nav-btn" id="reel-next" aria-label="Next">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </button>
+                <header class="sec-header reveal-up">
+                    <span class="sec-label">The Process</span>
+                    <h2 class="sec-title">From Vision to Reality</h2>
+                </header>
+                <div class="process-timeline">
+                    <div class="process-step reveal-up"><span class="step-num">01</span><div class="step-content"><h3>Concept &amp; Sketch</h3><p>Emotions translated into form. Every curve designed with intention.</p></div></div>
+                    <div class="process-step reveal-up"><span class="step-num">02</span><div class="step-content"><h3>Digital Precision</h3><p>CAD-engineered to 0.01mm accuracy. Comfort and beauty in harmony.</p></div></div>
+                    <div class="process-step reveal-up"><span class="step-num">03</span><div class="step-content"><h3>Master Craftsmanship</h3><p>Artisans with decades of expertise. Casting, polishing, stone-setting.</p></div></div>
+                    <div class="process-step reveal-up"><span class="step-num">04</span><div class="step-content"><h3>Quality Assurance</h3><p>Weight, finish, durability — inspected before it earns our name.</p></div></div>
+                    <div class="process-step reveal-up"><span class="step-num">05</span><div class="step-content"><h3>Luxury Packaging</h3><p>The unboxing is part of the experience. Every detail considered.</p></div></div>
+                    <div class="process-step reveal-up"><span class="step-num">06</span><div class="step-content"><h3>Delivered To You</h3><p>Insured shipping worldwide. Your piece arrives ready to wear.</p></div></div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 6: WHY SOVÉRA -->
-        <section id="why-sovera" class="section comparison-section">
-            <div class="container">
-                <div class="section-header reveal-up">
-                    <span class="section-label">The Difference</span>
-                    <h2 class="section-title">Why Sovéra</h2>
-                    <p class="section-desc">Not all jewellery is created equal. Here's what sets us apart.</p>
-                </div>
-                <div class="comparison-table reveal-up">
-                    <div class="comparison-header">
-                        <div class="comparison-col comparison-feature"></div>
-                        <div class="comparison-col comparison-sovera">The House of Sovéra</div>
-                        <div class="comparison-col comparison-fashion">Typical Fashion Jewellery</div>
-                        <div class="comparison-col comparison-traditional">Traditional Jewellery</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Everyday Wear</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Designed for daily life</div>
-                        <div class="comparison-col comparison-fashion"><span class="partial">~</span> Fades quickly</div>
-                        <div class="comparison-col comparison-traditional"><span class="cross">&#10007;</span> Too heavy/formal</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Modern Design</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Contemporary & timeless</div>
-                        <div class="comparison-col comparison-fashion"><span class="check">&#10003;</span> Trendy but fleeting</div>
-                        <div class="comparison-col comparison-traditional"><span class="cross">&#10007;</span> Outdated aesthetics</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Emotional Meaning</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Story-driven design</div>
-                        <div class="comparison-col comparison-fashion"><span class="cross">&#10007;</span> Mass-produced</div>
-                        <div class="comparison-col comparison-traditional"><span class="partial">~</span> Occasion-only</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Giftability</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Perfect for any moment</div>
-                        <div class="comparison-col comparison-fashion"><span class="partial">~</span> Lacks significance</div>
-                        <div class="comparison-col comparison-traditional"><span class="partial">~</span> Only major occasions</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Versatility</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Office to evening</div>
-                        <div class="comparison-col comparison-fashion"><span class="partial">~</span> Casual only</div>
-                        <div class="comparison-col comparison-traditional"><span class="cross">&#10007;</span> Formal only</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Premium Experience</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Luxury unboxing & care</div>
-                        <div class="comparison-col comparison-fashion"><span class="cross">&#10007;</span> Generic packaging</div>
-                        <div class="comparison-col comparison-traditional"><span class="partial">~</span> Varies greatly</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div class="comparison-col comparison-feature">Transparent Pricing</div>
-                        <div class="comparison-col comparison-sovera"><span class="check">&#10003;</span> Honest value</div>
-                        <div class="comparison-col comparison-fashion"><span class="partial">~</span> Cheap materials</div>
-                        <div class="comparison-col comparison-traditional"><span class="cross">&#10007;</span> Inflated margins</div>
-                    </div>
+        <!-- WHY SOVÉRA -->
+        <section id="why-sovera" class="section">
+            <div class="container container-narrow">
+                <header class="sec-header reveal-up">
+                    <span class="sec-label">The Difference</span>
+                    <h2 class="sec-title">Why Sovéra</h2>
+                </header>
+                <div class="why-grid reveal-up">
+                    <div class="why-item"><span class="why-check">&#10003;</span><div><strong>Everyday Wear</strong><p>Designed to endure your daily life beautifully</p></div></div>
+                    <div class="why-item"><span class="why-check">&#10003;</span><div><strong>Premium at ₹999–₹2,499</strong><p>Luxury quality without luxury markup</p></div></div>
+                    <div class="why-item"><span class="why-check">&#10003;</span><div><strong>Meaningful Design</strong><p>Every piece tells a story, not just a trend</p></div></div>
+                    <div class="why-item"><span class="why-check">&#10003;</span><div><strong>925 Silver &amp; 18K Vermeil</strong><p>Real materials that last years</p></div></div>
+                    <div class="why-item"><span class="why-check">&#10003;</span><div><strong>30-Day Easy Returns</strong><p>Love it or send it back, no questions</p></div></div>
+                    <div class="why-item"><span class="why-check">&#10003;</span><div><strong>Worldwide Shipping</strong><p>India, UAE, US, UK, Canada — and beyond</p></div></div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 7: TRUST BUILDERS -->
-        <section class="section trust-section">
-            <div class="container">
-                <div class="trust-grid">
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-                        <h4>Everyday Wear</h4>
-                        <p>Designed to endure your daily life beautifully</p>
-                    </div>
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-                        <h4>Premium Craftsmanship</h4>
-                        <p>Master artisans with decades of expertise</p>
-                    </div>
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12V8H6a2 2 0 01-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 000 4h4v-4h-4z"/></svg></div>
-                        <h4>Meaningful Gifting</h4>
-                        <p>Luxury packaging that makes giving special</p>
-                    </div>
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
-                        <h4>Secure Checkout</h4>
-                        <p>256-bit SSL encrypted transactions</p>
-                    </div>
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-                        <h4>Worldwide Shipping</h4>
-                        <p>Delivered to your door, anywhere on earth</p>
-                    </div>
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-                        <h4>Quality Materials</h4>
-                        <p>925 silver, 18K gold vermeil, premium stones</p>
-                    </div>
-                    <div class="trust-item reveal-up">
-                        <div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg></div>
-                        <h4>Easy Returns</h4>
-                        <p>30-day hassle-free return policy</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- SECTION 8: FEATURED STORIES -->
-        <section id="stories" class="section stories-section">
+        <!-- CUSTOMER STORIES -->
+        <section id="stories" class="section section-alt">
             <div class="container">
-                <div class="section-header reveal-up">
-                    <span class="section-label">Real Moments</span>
-                    <h2 class="section-title">Stories From Our Community</h2>
-                    <p class="section-desc">Every piece we create becomes part of someone's story.</p>
-                </div>
+                <header class="sec-header reveal-up">
+                    <span class="sec-label">Real Moments</span>
+                    <h2 class="sec-title">Stories From Our Community</h2>
+                </header>
                 <div class="stories-grid">
                     <div class="story-card reveal-up">
-                        <div class="story-quote">"I bought the Eternal Band the day I got promoted to Director. Every time I look at my hand in a meeting, I remember what I overcame to get here."</div>
-                        <div class="story-meta">
-                            <div class="story-author"><div class="story-avatar">P</div><div><strong>Priya S.</strong><span>Promotion Gift</span></div></div>
-                            <div class="story-product">The Eternal Band</div>
-                        </div>
+                        <blockquote>"I bought the Eternal Band the day I got promoted to Director. Every time I look at my hand in a meeting, I remember what I overcame."</blockquote>
+                        <cite><strong>Priya S.</strong> &mdash; Promotion Gift</cite>
                     </div>
                     <div class="story-card reveal-up">
-                        <div class="story-quote">"For our 5th anniversary, I wanted something she'd wear every single day — not just on special occasions. The Connection Bracelet was perfect."</div>
-                        <div class="story-meta">
-                            <div class="story-author"><div class="story-avatar">R</div><div><strong>Rahul M.</strong><span>Anniversary Gift</span></div></div>
-                            <div class="story-product">Connection Bracelet</div>
-                        </div>
+                        <blockquote>"For our 5th anniversary, I wanted something she'd wear every single day. The Connection Bracelet was perfect."</blockquote>
+                        <cite><strong>Rahul M.</strong> &mdash; Anniversary Gift</cite>
                     </div>
                     <div class="story-card reveal-up">
-                        <div class="story-quote">"My parents gifted me the Milestone Pendant on graduation day. It's been 2 years and I haven't taken it off. It reminds me of their belief in me."</div>
-                        <div class="story-meta">
-                            <div class="story-author"><div class="story-avatar">A</div><div><strong>Ananya K.</strong><span>Graduation Gift</span></div></div>
-                            <div class="story-product">Milestone Pendant</div>
-                        </div>
+                        <blockquote>"My parents gifted me the Milestone Pendant on graduation day. 2 years later, I haven't taken it off."</blockquote>
+                        <cite><strong>Ananya K.</strong> &mdash; Graduation Gift</cite>
                     </div>
                     <div class="story-card reveal-up">
-                        <div class="story-quote">"After finishing my first marathon, I needed something to mark that moment forever. The Identity Signet ring is my daily reminder that I can do hard things."</div>
-                        <div class="story-meta">
-                            <div class="story-author"><div class="story-avatar">V</div><div><strong>Vikram T.</strong><span>Self-Reward</span></div></div>
-                            <div class="story-product">Identity Signet</div>
-                        </div>
-                    </div>
-                    <div class="story-card reveal-up">
-                        <div class="story-quote">"We bought matching Legacy Chains the day we moved in together. It's our first home, our first real step. We wear them every single day."</div>
-                        <div class="story-meta">
-                            <div class="story-author"><div class="story-avatar">S</div><div><strong>Sneha & Arjun</strong><span>Relationship Milestone</span></div></div>
-                            <div class="story-product">Legacy Chain (Pair)</div>
-                        </div>
+                        <blockquote>"After my first marathon, the Identity Signet became my daily reminder that I can do hard things."</blockquote>
+                        <cite><strong>Vikram T.</strong> &mdash; Self-Reward</cite>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- NEWSLETTER SECTION -->
-        <section class="section newsletter-section">
-            <div class="container">
-                <div class="newsletter-inner reveal-up">
+        <!-- NEWSLETTER -->
+        <section class="section">
+            <div class="container container-narrow">
+                <div class="newsletter-block reveal-up">
                     <h2>Join The House</h2>
-                    <p>Be the first to discover new collections, exclusive stories, and moments worth celebrating.</p>
+                    <p>New collections, exclusive stories, and moments worth celebrating.</p>
                     <form class="newsletter-form" id="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
+                        <input type="email" placeholder="Your email" required>
                         <button type="submit" class="btn btn-primary">Join</button>
                     </form>
-                    <span class="newsletter-note">No spam. Just meaningful moments.</span>
+                    <small>No spam. Just meaningful moments.</small>
                 </div>
             </div>
         </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -647,44 +311,17 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>THE HOUSE OF SOVÉRA</h3>
-                    <p>"Some moments deserve more than a photograph."</p>
-                    <p class="footer-desc">We create meaningful everyday jewellery that celebrates your achievements, relationships, milestones, and growth.</p>
+                    <p class="footer-tagline">"Some moments deserve more than a photograph."</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Shop</h4>
-                    <a href="#collections">Rings</a>
-                    <a href="#collections">Bracelets</a>
-                    <a href="#collections">Pendants</a>
-                    <a href="#collections">Earrings</a>
-                    <a href="#collections">Chains</a>
-                    <a href="#collections">Couple Jewellery</a>
-                    <a href="#collections">Men's Collection</a>
-                </div>
-                <div class="footer-links">
-                    <h4>About</h4>
-                    <a href="#story">Our Story</a>
-                    <a href="#process">The Process</a>
-                    <a href="#why-sovera">Why Sovéra</a>
-                    <a href="#stories">Customer Stories</a>
-                    <a href="#">Size Guide</a>
-                    <a href="#">Care Instructions</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Support</h4>
-                    <a href="#">Shipping & Delivery</a>
-                    <a href="#">Returns & Exchanges</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <div class="footer-links"><h4>Shop</h4><a href="#collections">Rings</a><a href="#collections">Bracelets</a><a href="#collections">Pendants</a><a href="#collections">Earrings</a><a href="#collections">Chains</a><a href="#collections">Couple Bands</a></div>
+                <div class="footer-links"><h4>Company</h4><a href="#story">Our Story</a><a href="#process">The Process</a><a href="#why-sovera">Why Sovéra</a><a href="#stories">Customer Stories</a><a href="#">Size Guide</a></div>
+                <div class="footer-links"><h4>Support</h4><a href="#">Shipping &amp; Delivery</a><a href="#">Returns</a><a href="#">FAQs</a><a href="#">Contact</a><a href="#">Privacy Policy</a></div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 The House of Sovéra. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                    <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"/><line x1="12" y1="16" x2="10" y2="22"/></svg></a>
-                    <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10 8 16 12 10 16"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"/><line x1="12" y1="16" x2="10" y2="22"/></svg></a>
                 </div>
             </div>
         </div>
@@ -694,85 +331,40 @@
     <div class="product-modal" id="product-modal">
         <div class="product-modal-inner">
             <button class="product-modal-close" id="product-modal-close">&times;</button>
-            <div class="product-modal-3d" id="product-modal-3d">
-                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="modal-jewel-svg">
-                    <defs><linearGradient id="modal-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#E8D5B0"/><stop offset="50%" style="stop-color:#C9A96E"/><stop offset="100%" style="stop-color:#8B7340"/></linearGradient></defs>
-                    <ellipse cx="150" cy="155" rx="70" ry="78" fill="none" stroke="url(#modal-g)" stroke-width="12"/>
-                    <circle cx="150" cy="79" r="10" fill="#C9A96E"/><circle cx="150" cy="79" r="5" fill="#fff" opacity="0.7"/>
-                </svg>
-            </div>
             <div class="product-modal-content">
-                <h2 id="modal-product-name">Product Name</h2>
-                <p class="modal-product-story" id="modal-product-story">Product story</p>
+                <h2 id="modal-product-name">Product</h2>
+                <p class="modal-product-story" id="modal-product-story"></p>
                 <div class="modal-product-price" id="modal-product-price">₹0</div>
                 <div class="modal-product-details">
                     <div class="detail-tab active" data-tab="story">Story</div>
                     <div class="detail-tab" data-tab="materials">Materials</div>
-                    <div class="detail-tab" data-tab="size">Size Guide</div>
+                    <div class="detail-tab" data-tab="size">Size</div>
                     <div class="detail-tab" data-tab="care">Care</div>
                     <div class="detail-tab" data-tab="shipping">Shipping</div>
                 </div>
-                <div class="modal-tab-content" id="modal-tab-content">
-                    <p>Every piece tells a story. This one was designed for moments of quiet pride and everyday confidence.</p>
-                </div>
-                <div class="modal-actions">
-                    <button class="btn btn-primary btn-full" id="modal-add-to-cart">Add to Collection</button>
-                </div>
+                <div class="modal-tab-content" id="modal-tab-content"><p></p></div>
+                <button class="btn btn-primary btn-full" id="modal-add-to-cart">Add to Collection</button>
             </div>
         </div>
     </div>
 
-    <!-- Checkout Page -->
+    <!-- Checkout -->
     <div class="checkout-overlay" id="checkout-overlay">
         <div class="checkout-inner">
-            <div class="checkout-header">
-                <h2>Checkout</h2>
-                <button class="checkout-back" id="checkout-back">&larr; Back</button>
-            </div>
+            <div class="checkout-header"><h2>Checkout</h2><button class="checkout-back" id="checkout-back">&larr; Back</button></div>
             <div class="checkout-grid">
                 <div class="checkout-form">
-                    <div class="checkout-section">
-                        <h3>Contact Information</h3>
-                        <input type="email" placeholder="Email address" class="checkout-input">
-                        <input type="tel" placeholder="Phone number" class="checkout-input">
-                    </div>
-                    <div class="checkout-section">
-                        <h3>Shipping Address</h3>
-                        <div class="checkout-row"><input type="text" placeholder="First name" class="checkout-input"><input type="text" placeholder="Last name" class="checkout-input"></div>
-                        <input type="text" placeholder="Address" class="checkout-input">
-                        <div class="checkout-row"><input type="text" placeholder="City" class="checkout-input"><input type="text" placeholder="State" class="checkout-input"></div>
-                        <div class="checkout-row"><input type="text" placeholder="PIN Code" class="checkout-input"><select class="checkout-input"><option>India</option><option>United Arab Emirates</option><option>United States</option><option>United Kingdom</option><option>Canada</option></select></div>
-                    </div>
-                    <div class="checkout-section">
-                        <h3>Payment</h3>
-                        <div class="payment-methods">
-                            <label class="payment-method active"><input type="radio" name="payment" value="card" checked><span>Credit / Debit Card</span></label>
-                            <label class="payment-method"><input type="radio" name="payment" value="upi"><span>UPI</span></label>
-                            <label class="payment-method"><input type="radio" name="payment" value="netbanking"><span>Net Banking</span></label>
-                        </div>
-                        <input type="text" placeholder="Card number" class="checkout-input">
-                        <div class="checkout-row"><input type="text" placeholder="MM/YY" class="checkout-input"><input type="text" placeholder="CVV" class="checkout-input"></div>
-                    </div>
+                    <div class="checkout-section"><h3>Contact</h3><input type="email" placeholder="Email" class="checkout-input"><input type="tel" placeholder="Phone" class="checkout-input"></div>
+                    <div class="checkout-section"><h3>Shipping</h3><div class="checkout-row"><input type="text" placeholder="First name" class="checkout-input"><input type="text" placeholder="Last name" class="checkout-input"></div><input type="text" placeholder="Address" class="checkout-input"><div class="checkout-row"><input type="text" placeholder="City" class="checkout-input"><input type="text" placeholder="PIN Code" class="checkout-input"></div></div>
+                    <div class="checkout-section"><h3>Payment</h3><input type="text" placeholder="Card number" class="checkout-input"><div class="checkout-row"><input type="text" placeholder="MM/YY" class="checkout-input"><input type="text" placeholder="CVV" class="checkout-input"></div></div>
                     <button class="btn btn-primary btn-full checkout-submit">Complete Purchase</button>
-                    <div class="checkout-trust">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-                        <span>256-bit SSL Encrypted | Secure Payment</span>
-                    </div>
+                    <p class="checkout-secure">&#128274; 256-bit SSL Encrypted</p>
                 </div>
-                <div class="checkout-summary">
-                    <h3>Order Summary</h3>
-                    <div class="checkout-items" id="checkout-items"></div>
-                    <div class="checkout-totals">
-                        <div class="checkout-total-row"><span>Subtotal</span><span id="checkout-subtotal">₹0</span></div>
-                        <div class="checkout-total-row"><span>Shipping</span><span id="checkout-shipping">Free</span></div>
-                        <div class="checkout-total-row checkout-total-final"><span>Total</span><span id="checkout-total">₹0</span></div>
-                    </div>
-                </div>
+                <div class="checkout-summary"><h3>Summary</h3><div class="checkout-items" id="checkout-items"></div><div class="checkout-totals"><div class="checkout-total-row checkout-total-final"><span>Total</span><span id="checkout-total">₹0</span></div></div></div>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="src/js/three/three.min.js"></script>
     <script src="src/js/utils/currency.js"></script>
     <script src="src/js/utils/cart.js"></script>
